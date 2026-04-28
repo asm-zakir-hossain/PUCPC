@@ -2,392 +2,282 @@
 ## Prime University Computer Programming Club Website
 
 **Product Name:** Prime University Computer Programming Club (PUCPC) Website  
-**Version:** 1.3  
+**Version:** 1.5  
 **Date:** 2026-04-29  
-**Prepared For:** Prime University Computer Programming Club (PUCPC)
 
 ---
 
 ## 1. Overview
 
-The **Prime University Computer Programming Club (PUCPC) Website** will be the official digital platform for the club. It will serve as a modern, dynamic, and professional website to showcase the club’s identity, activities, achievements, members, and alumni.
+The **PUCPC Website** will be a dynamic, activity-driven platform where:
 
-The website will be structured so that:
-
-- **Club Activities appear on the Homepage** and are the first thing visitors see
-- **Achievements are a separate dedicated section**
-- Authorized admins can post updates, photos, and event content regularly
-
----
-
-## 2. Main Goals
-
-The website should:
-
-- Show **club activities on the homepage** for immediate visibility
-- Keep **Achievements** as a separate and important section
-- Showcase **current and previous committee members**
-- Present **contests and classes**
-- Highlight **CSE Fest**
-- Recognize **Best Performers** and **Rising Stars**
-- Maintain a searchable **CSE Department Alumni** section
-- Allow **authorized admins to post activities and photos**
-- Provide a responsive, elegant, and easy-to-manage experience
+- The **Homepage functions as a Facebook-style activity feed**
+- All structured content is accessible via the **navigation bar**
+- Admins can **post activities, updates, and photos**
+- Additional sections like **About, Events, and Join/Contact** provide essential information and engagement
 
 ---
 
-## 3. Target Users
+## 2. Core Concept
 
-### Primary Users
-- Current PUCPC members
-- CSE students of Prime University
-- Faculty and club advisors
-- Club administrators
+- **Homepage → Live Activity Feed**
+- **Navbar → Structured Information & Sections**
 
-### Secondary Users
-- Alumni
-- Prospective students
-- Visitors
-- Recruiters and academic visitors
+This ensures:
+- Immediate engagement (via activity posts)
+- Organized navigation (via dedicated pages)
 
 ---
 
-## 4. User Roles
+## 3. Navigation Bar Structure
 
-### 4.1 Public Users
-Can view all public content on the website:
-- Homepage activities
+The website navigation will include:
+
+- Home (Activity Feed)
+- About
 - Achievements
-- Committee members
-- Past activities
-- Contests and classes
-- CSE Fest
-- Best performers
-- Alumni
-
-### 4.2 Admin Users
-Authorized club members who can manage website content.
-
-#### Admin Capabilities
-- Post club activities on the homepage
-- Upload activity photos
-- Add/edit/delete activities
-- Add/edit/delete achievements
-- Manage committee members
-- Manage contest and class posts
-- Manage best performers
-- Manage alumni information
-
----
-
-## 5. Core Features
-
-## 5.1 Homepage Activities
-**This is the first thing visitors will see.**
-
-### Requirements
-- Show the latest or featured club activities directly on the homepage
-- Display activity cards with:
-  - Title
-  - Date
-  - Short description
-  - Photos
-- Make the homepage feel active and updated
-- Allow visitors to quickly understand what the club is currently doing
-
-### Content Types
-- Workshops
-- Training sessions
-- Problem-solving meetings
-- Contest preparation
-- Club events
-- Photo highlights
-
----
-
-## 5.2 Achievements
-**Achievements will be a separate dedicated section.**
-
-### Requirements
-- Dedicated achievements page
-- Highlight top club successes prominently
-- Show:
-  - Contest/event name
-  - Rank/position
-  - Team name
-  - Participants
-  - Date
-  - Supporting images or trophy graphics
-- Support filtering by year or event type if needed
-
-### Visual Priority
-Achievements should remain highly visible and professionally designed, but not replace homepage activities.
-
----
-
-## 5.3 Committee Members
-The website should include both current and previous committee members.
-
-### Requirements
-- Separate sections for:
-  - Current Committee
-  - Previous Committees
-- Each profile should contain:
-  - Name
-  - Position
-  - Session/Year
-  - Photo
-- Optional social/contact links
-
----
-
-## 5.4 Past Activities
-This section will store older club activities and event history.
-
-### Requirements
-- Archive of past club activities
-- Each post should include:
-  - Title
-  - Date
-  - Description
-  - Photos
-- Can be displayed in timeline or card format
-
----
-
-## 5.5 Contests + Classes
-This section will cover competitive programming contests and training classes.
-
-### Requirements
-- Separate categories for:
-  - Contests
-  - Classes
-- Contest posts may include:
-  - Contest name
-  - Date
-  - Results
-  - Photos
-- Class posts may include:
-  - Topic
-  - Instructor
-  - Date
-  - Resources or notes
-
----
-
-## 5.6 CSE Fest
-A dedicated section for CSE Fest participation and club involvement.
-
-### Requirements
-- Event highlights
-- Photo gallery
-- Participation details
-- Club achievements during the fest
-
----
-
-## 5.7 Best Performers
-This section will recognize outstanding members.
-
-### Categories
-- Overall Best Performers
-- Rising Star (Junior)
-
-### Requirements
-- Name
-- Photo
-- Batch/Year
-- Short achievement summary
-- Visually highlighted cards or badges
-
----
-
-## 5.8 CSE Department Alumni
-This will be available from the navigation bar.
-
-### Requirements
-Each alumni profile should include:
-- Name
-- Photo
-- Current workplace
-- Current designation
-- Contact number
-- E-mail
-
-### Optional Fields
-- Graduation year
-- LinkedIn profile
-- Short bio
-
-### Features
-- Search by name
-- Easy browsing
-- Scalable directory structure
-
----
-
-## 6. Homepage Structure
-
-The homepage should be designed so that a visitor immediately sees club activity and recent updates.
-
-### Homepage Sections
-1. Hero section with club branding
-2. Latest / featured **activities**
-3. Short introduction about PUCPC
-4. Recent activity gallery or cards
-5. Featured achievements preview
-6. Current committee preview
-7. Best performers preview
-8. Quick links to other sections
-9. Footer
-
----
-
-## 7. Navigation Structure
-
-Top navigation bar:
-
-- Home
-- Achievements
+- Events
 - Committee Members
-- Activities
 - Contests + Classes
 - CSE Fest
 - Best Performers
-- CSE Department Alumni
-- Contact
+- Alumni
+- Join / Contact
 
 ---
 
-## 8. Admin Dashboard
+## 4. Homepage (Activity Feed)
 
-A secure admin panel should allow authorized users to manage content.
+### Description
+The homepage will display **club activities like Facebook posts**.
 
-### Admin Features
-- Login authentication
-- Add/edit/delete activity posts
-- Upload multiple photos for each activity
-- Manage achievements
-- Manage committee members
-- Manage contests and classes
-- Manage alumni records
-- Highlight selected content on homepage
-
-### Activity Posting System
-The activity section should function like a mini blog system:
-- Admin can create a post
-- Add title, date, description, and photos
-- Publish immediately
-- Update or remove later if needed
+### Features
+- Reverse chronological feed
+- Post cards with:
+  - Title
+  - Description
+  - Date
+  - Images (single/multiple)
+- Scrollable UI
+- Dynamic updates from admin panel
 
 ---
 
-## 9. Functional Requirements
+## 5. About Section (NEW)
 
-### Content Management
-- Admins can post new activities regularly
-- Admins can upload event photos
-- Admins can update homepage content dynamically
+### Purpose
+To explain **what the club is and what it does**.
 
-### Search and Filtering
-- Alumni directory should support search
-- Optional filters for achievements, members, and activities by year or category
+### Content
 
-### Media Support
-- Image uploads
-- Photo galleries
-- Optimized image display
+#### 5.1 Club Introduction
+- Brief overview of PUCPC
+- Mission and vision
 
----
+#### 5.2 What the Club Does
+Clearly describe activities such as:
+- Workshops
+- Competitive programming training
+- Contests and participation
+- Problem-solving sessions
+- Projects and collaborations
 
-## 10. Non-Functional Requirements
-
-- Responsive on mobile, tablet, and desktop
-- Fast loading pages
-- Secure admin access
-- Easy to maintain
-- Scalable for future content growth
-- Clean, professional academic style
+### Optional Enhancements
+- Advisor message
+- Club history timeline
+- Photos or highlights
 
 ---
 
-## 11. Design Guidelines
+## 6. Events Section (NEW)
 
-- Modern and minimal design
-- Strong focus on club activity visibility
-- Achievements section should feel premium and important
-- Card-based layout for activities and members
-- Use high-quality photos
-- Clean typography and smooth spacing
-- Consistent club branding
+A dedicated page for all event-related content.
+
+### 6.1 Upcoming Events
+- List of:
+  - Upcoming contests
+  - Hackathons
+  - Workshops
+- Each entry includes:
+  - Title
+  - Date
+  - Description
+  - Registration link (if applicable)
 
 ---
 
-## 12. Data Structure (High-Level)
+### 6.2 Past Events
+- Archive of previous events
+- Each event includes:
+  - Title
+  - Date
+  - Description
+  - Photo gallery
+- Card or timeline layout
+
+---
+
+## 7. Join / Contact Section (NEW)
+
+### Purpose
+Allow students and visitors to **join the club or contact the team easily**
+
+### Features
+
+#### 7.1 Join Form
+- Google Form or external signup link
+- Clear CTA button: **“Join the Club”**
+
+#### 7.2 Contact Information
+- Club email
+- Phone (optional)
+- Social media links (Facebook, LinkedIn, etc.)
+
+#### 7.3 Optional Contact Form
+- Name
+- Email
+- Message
+- Submit button
+
+---
+
+## 8. Achievements
+
+- Dedicated page
+- Displays:
+  - Contest name
+  - Rank
+  - Team name
+  - Participants
+  - Date
+  - Images
+- Clean and professional layout
+
+---
+
+## 9. Committee Members
+
+- Current committee
+- Previous committees
+- Profiles include:
+  - Name
+  - Role
+  - Session
+  - Photo
+
+---
+
+## 10. Contests + Classes
+
+- Contest updates and results
+- Training classes and sessions
+- Optional resources/materials
+
+---
+
+## 11. CSE Fest
+
+- Club participation
+- Highlights
+- Gallery
+
+---
+
+## 12. Best Performers
+
+### Categories
+- Overall Best Performer
+- Rising Star (Junior)
+
+### Content
+- Name
+- Photo
+- Batch
+- Achievements summary
+
+---
+
+## 13. Alumni
+
+- Name
+- Photo
+- Workplace
+- Designation
+- Phone
+- Email
+- Search functionality
+
+---
+
+## 14. Admin Dashboard
+
+### Core Feature
+
+Admins can manage all content.
+
+### Capabilities
+- Create activity posts (homepage feed)
+- Upload multiple images
+- Manage:
+  - Events (upcoming & past)
+  - Achievements
+  - Members
+  - Alumni
+  - Best performers
+
+---
+
+## 15. Data Models (Updated)
 
 ### Activity Post
 - id
 - title
+- content
+- images[]
+- created_at
+- created_by
+
+### Event
+- id
+- title
+- type (upcoming/past)
 - date
 - description
 - images[]
-- created_by
-- created_at
-
-### Achievement
-- id
-- title
-- contest_name
-- rank
-- team_name
-- participants
-- date
-- image
-
-### Committee Member
-- id
-- name
-- role
-- session
-- photo
-- type (current/previous)
-
-### Alumni
-- id
-- name
-- photo
-- current_workplace
-- designation
-- phone
-- email
+- registration_link
 
 ---
 
-## 13. Success Metrics
+## 16. Design Guidelines
 
-The website will be successful if:
-- Visitors immediately see recent club activities on the homepage
-- Achievements are clearly documented in a separate section
-- Admins regularly post content
-- Alumni information is easy to access
-- The site becomes the official club reference point
-
----
-
-## 14. Future Enhancements
-
-- Blog/news section
-- Event registration
-- Member login portal
-- Contest result archive
-- Alumni networking features
-- Photo album categories
-- Notification system for new posts
+- Facebook-style feed on homepage
+- Clean and modern UI
+- Card-based layouts
+- Image-focused design
+- Mobile-first responsive design
 
 ---
 
-## 15. Final Note
+## 17. Success Metrics
 
-The **PUCPC website** should feel active, trustworthy, and impressive from the first visit.
+- Active posting by admins
+- High engagement on homepage
+- Increased participation in events
+- More student signups via Join section
 
-The **Homepage must showcase current club activities**, while **Achievements remain a separate dedicated section** that highlights the club’s success.
+---
+
+## 18. Final Note
+
+This version makes the website:
+
+- **Dynamic (activity feed)**
+- **Informative (About & Events)**
+- **Actionable (Join/Contact section)**
+
+👉 Visitors will **see live activities immediately**  
+👉 Understand **what the club does (About)**  
+👉 Explore **events (Events section)**  
+👉 And **join easily (Join/Contact)**  
+
+This creates a complete and professional club website experience.
