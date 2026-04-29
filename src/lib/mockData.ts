@@ -1,4 +1,4 @@
-import { ActivityPost, Achievement } from "@/types";
+import { ActivityPost, Achievement, ClubEvent } from "@/types";
 
 export const mockActivityPosts: ActivityPost[] = [
   {
@@ -29,6 +29,48 @@ export const mockActivityPosts: ActivityPost[] = [
     images: [],
     created_at: new Date(Date.now() - 1000 * 60 * 60 * 24 * 5).toISOString(), // 5 days ago
     created_by: "President",
+  }
+];
+
+export const mockEvents: ClubEvent[] = [
+  {
+    id: "evt-1",
+    title: "PUCPC Intra-University Programming Contest 2026",
+    type: "upcoming",
+    date: "2026-05-15T10:00:00.000Z",
+    description: "The biggest programming contest of the year is here! Form a team of 3 and prove your problem-solving skills. Exciting prizes await the champions. Open to all current students.",
+    images: [],
+    registration_link: "https://docs.google.com/forms",
+  },
+  {
+    id: "evt-2",
+    title: "Advanced Data Structures Workshop",
+    type: "upcoming",
+    date: "2026-05-05T14:00:00.000Z",
+    description: "Join us for an intensive workshop on advanced data structures, focusing on Segment Trees and Fenwick Trees. Perfect for intermediate competitive programmers.",
+    images: [],
+    registration_link: "https://docs.google.com/forms",
+  },
+  {
+    id: "evt-3",
+    title: "CodeRush Hackathon 2025",
+    type: "past",
+    date: "2025-10-20T09:00:00.000Z",
+    description: "A 24-hour hackathon where teams built innovative solutions for campus problems. Congratulations to team 'Code Crafters' for winning first place!",
+    images: [
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200",
+      "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1200",
+    ],
+  },
+  {
+    id: "evt-4",
+    title: "Intro to Competitive Programming Seminar",
+    type: "past",
+    date: "2025-09-10T15:00:00.000Z",
+    description: "An introductory seminar for freshmen to get started with competitive programming. We covered basic algorithmic paradigms and C++ STL.",
+    images: [
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1200",
+    ],
   }
 ];
 

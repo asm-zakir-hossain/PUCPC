@@ -18,3 +18,14 @@ export interface Achievement {
   is_featured?: boolean;
 }
 
+export interface ClubEvent {
+  id: string;
+  title: string;
+  type: 'upcoming' | 'past';
+  date: string;
+  description: string;
+  images: string[];
+  registration_link?: string;
+}
+
+
