@@ -62,23 +62,15 @@ export const mockMembers: Member[] = [
   { id: "mem-11", name: "Rahim Uddin", role: "Content Writer", photo: "/committee-current/image44.png", type: "current", batch: "54th Batch" },
   { id: "mem-12", name: "Fahim Faysal", role: "Graphics Designer", photo: "/committee-current/image45.png", type: "current", batch: "54th Batch" },
   { id: "mem-13", name: "Sadia Islam", role: "Lead Developer", photo: "/committee-current/image46.png", type: "current", batch: "53rd Batch" },
-  {
-    id: "mem-4",
-    name: "Arif Hossain",
-    role: "President",
-    session: "2024-2025",
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
-    type: "previous",
-    batch: "48th Batch"
-  },
-  {
-    id: "mem-5",
-    name: "Nafis Ahmed",
-    role: "General Secretary",
-    session: "2024-2025",
-    type: "previous",
-    batch: "49th Batch"
-  }
+  { id: "prev-1", name: "MD.Tamim khan", role: "President", photo: "/previous-committee/image15.png", type: "previous", batch: "Batch 59" },
+  { id: "prev-2", name: "MD. Rashed Hossain", role: "Secretary", photo: "/previous-committee/image16.png", type: "previous", batch: "Batch 62" },
+  { id: "prev-3", name: "MD. Zakir hossain", role: "Treasurer", photo: "/previous-committee/image17.png", type: "previous", batch: "Batch 62" },
+  { id: "prev-4", name: "Saiful Islam Nirob", role: "Organizing Secretary", photo: "/previous-committee/image18.png", type: "previous", batch: "Batch 63" },
+  { id: "prev-5", name: "Sadia Islam Sharna", role: "Co-Organizing Secretary", photo: "/previous-committee/image19.png", type: "previous", batch: "Batch 63" },
+  { id: "prev-6", name: "Abu Bakar Shihab", role: "Instructor", photo: "/previous-committee/image20.png", type: "previous", batch: "Batch 63" },
+  { id: "prev-7", name: "Shakib Hossen", role: "Instructor", photo: "/previous-committee/image21.png", type: "previous", batch: "Batch 62" },
+  { id: "prev-8", name: "Hamim Reza", role: "Instructor", photo: "/previous-committee/image22.png", type: "previous", batch: "Batch 62" },
+  { id: "prev-9", name: "Omor Faruq", role: "Instructor", photo: "/previous-committee/image23.png", type: "previous", batch: "Batch 63" }
 ];
 
 export const mockEvents: ClubEvent[] = [
