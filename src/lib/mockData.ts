@@ -1,4 +1,4 @@
-import { ActivityPost, Achievement, ClubEvent, Member } from "@/types";
+import { ActivityPost, Achievement, ClubEvent, Member, Resource } from "@/types";
 
 export const mockActivityPosts: ActivityPost[] = [
   {
@@ -113,6 +113,44 @@ export const mockEvents: ClubEvent[] = [
     images: [
       "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1200",
     ],
+  }
+];
+
+export const mockResources: Resource[] = [
+  {
+    id: "res-1",
+    title: "Codeforces",
+    description: "The premier competitive programming platform. Participate in global contests and solve a vast archive of problems.",
+    link: "https://codeforces.com/",
+    category: "platform",
+  },
+  {
+    id: "res-2",
+    title: "LeetCode",
+    description: "Excellent platform for mastering data structures, algorithms, and preparing for technical interviews.",
+    link: "https://leetcode.com/",
+    category: "platform",
+  },
+  {
+    id: "res-3",
+    title: "CP-Algorithms",
+    description: "Comprehensive tutorials on algorithms and data structures commonly used in competitive programming.",
+    link: "https://cp-algorithms.com/",
+    category: "tutorial",
+  },
+  {
+    id: "res-4",
+    title: "USACO Guide",
+    description: "A free collection of curated, high-quality competitive programming resources created by finalists.",
+    link: "https://usaco.guide/",
+    category: "tutorial",
+  },
+  {
+    id: "res-5",
+    title: "C++ Reference",
+    description: "The complete reference for the C++ standard library, essential for STL mastery.",
+    link: "https://en.cppreference.com/",
+    category: "tool",
   }
 ];
 

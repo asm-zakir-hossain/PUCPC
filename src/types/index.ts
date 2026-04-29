@@ -37,5 +37,14 @@ export interface Member {
   type: 'current' | 'previous';
 }
 
+export interface Resource {
+  id: string;
+  title: string;
+  description: string;
+  link: string;
+  category: 'tutorial' | 'platform' | 'tool';
+}
+
+
 
 

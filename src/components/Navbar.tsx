@@ -10,11 +10,13 @@ const navLinks = [
   { name: "Achievements", href: "/achievements" },
   { name: "Events", href: "/events" },
   { name: "Committee", href: "/committee" },
+  { name: "Resources", href: "/resources" },
+  { name: "Contact & FAQs", href: "/contact" },
   { name: "Contests + Classes", href: "/contests" },
   { name: "CSE Fest", href: "/cse-fest" },
   { name: "Best Performers", href: "/best-performers" },
   { name: "Alumni", href: "/alumni" },
-  { name: "Join", href: "/join" },
+  { name: "Register", href: "/register" },
 ];
 
 export default function Navbar() {
