@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
 
-export default function RegisterPage() {
+export default function JoinPage() {
   const benefits = [
     "Access to exclusive competitive programming workshops",
     "Mentorship from senior programmers and alumni",
@@ -74,7 +74,7 @@ export default function RegisterPage() {
                   (Google Form Embed Placeholder)
                 </p>
                 <p className="text-foreground/40 text-sm max-w-md">
-                  Once you have your real Google Form URL, replace the `src` attribute in the iframe tag in `src/app/register/page.tsx`.
+                  Once you have your real Google Form URL, replace the `src` attribute in the iframe tag in `src/app/join/page.tsx`.
                 </p>
               </div>
             </div>
