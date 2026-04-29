@@ -1,4 +1,4 @@
-import { ActivityPost } from "@/types";
+import { ActivityPost, Achievement } from "@/types";
 
 export const mockActivityPosts: ActivityPost[] = [
   {
@@ -29,5 +29,34 @@ export const mockActivityPosts: ActivityPost[] = [
     images: [],
     created_at: new Date(Date.now() - 1000 * 60 * 60 * 24 * 5).toISOString(), // 5 days ago
     created_by: "President",
+  }
+];
+
+export const mockAchievements: Achievement[] = [
+  {
+    id: "ach-1",
+    contest_name: "ICPC Asia Dhaka Regional Contest 2025",
+    rank: "Honorable Mention",
+    team_name: "PUCPC_RuntimeTerror",
+    participants: ["Arif Hossain", "Mehedi Hasan", "Nafis Ahmed"],
+    date: "2025-11-15T00:00:00.000Z",
+    image: "https://images.unsplash.com/photo-1561489401-fc2876ced162?auto=format&fit=crop&q=80&w=1200",
+    is_featured: true,
+  },
+  {
+    id: "ach-2",
+    contest_name: "National Hackathon 2025",
+    rank: "1st Runner Up",
+    team_name: "Code Crafters",
+    participants: ["Sadia Islam", "Rahim Uddin"],
+    date: "2025-08-20T00:00:00.000Z",
+  },
+  {
+    id: "ach-3",
+    contest_name: "NCPC 2024",
+    rank: "Top 50",
+    team_name: "PUCPC_Ignite",
+    participants: ["Zakir Hossain", "Tariqul Islam", "Fahim Faysal"],
+    date: "2024-12-10T00:00:00.000Z",
   }
 ];
