@@ -23,11 +23,11 @@ export default function CommitteePage() {
 
       {/* Advisor Panel Section */}
       {advisors.length > 0 && (
-        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary-light/10 dark:bg-[#050505]">
+        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background border-b border-foreground/5">
           <div className="max-w-7xl mx-auto">
             <FadeIn direction="up" className="mb-12 text-center">
-              <h2 className="text-3xl font-bold tracking-tight mb-4">Advisory Panel</h2>
-              <div className="w-20 h-1 bg-amber-500 mx-auto rounded-full"></div>
+              <h2 className="text-3xl font-bold tracking-tight mb-4">Convener & Advisory Panel</h2>
+              <div className="w-20 h-1 bg-accent mx-auto rounded-full"></div>
             </FadeIn>
             
             <div className="flex flex-wrap justify-center gap-6 md:gap-8">

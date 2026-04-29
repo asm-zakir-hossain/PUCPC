@@ -2,6 +2,32 @@ import { ActivityPost, Achievement, ClubEvent, Member, Resource } from "@/types"
 
 export const mockActivityPosts: ActivityPost[] = [
   {
+    id: "post-00",
+    title: "BUET CSE Fest 2026: Prime University Represents at IUPC",
+    content: "The Department of Computer Science & Engineering, Prime University proudly represented the university at the Inter University Programming Contest, powered by Phitron | Prime Now Presents BUET CSE Fest 2026.\n\n🔹 Team Name: PrimeU_Supernova\n🔹 Team Members:\n• Md Rashed Hossain (62nd Batch)\n• Md Zakir Hossain (62nd Batch)\n• Saiful Islam Nirob (63rd Batch)\n\nThroughout the contest, the team showcased commendable problem-solving skills, consistency, and teamwork in a highly competitive environment. Their performance reflects strong dedication to competitive programming and a continuous pursuit of excellence.\n\nWe congratulate Team PrimeU_Supernova for representing Prime University with determination and professionalism, and we wish them continued success in future competitions.",
+    images: [
+      "/buet-iupc-2026/626011716_1506353981494745_8473754712018016657_n.jpg",
+      "/buet-iupc-2026/627030027_1506353954828081_3075863775525601971_n.jpg"
+    ],
+    created_at: new Date().toISOString(),
+    created_by: "Admin Team",
+  },
+  {
+    id: "post-0",
+    title: "🌟 Proud Moment for the Department of CSE, Prime University: Team Superm4n_Fanclub at ICPC Asia Dhaka Regional 2025 🌟",
+    content: "The Department of Computer Science and Engineering (CSE) at Prime University is proud to celebrate Team Superm4n_Fanclub for representing the university at the ICPC Asia Dhaka Regional Onsite Contest 2025, one of the most prestigious competitive programming competitions in the region. The Team Superm4n_Fanclub secured the 141th position out of 313 teams.\n\nFacing tough competition from top teams across leading universities, Team Superm4n_Fanclub demonstrated remarkable problem-solving skills, sharp algorithmic thinking, and outstanding teamwork. Their stellar performance reflects not only technical expertise but also dedication, resilience, and a true passion for competitive programming, earning them a commendable standing in this high-stakes contest.\n\n👨‍💻 Team: Superm4n_Fanclub\n🔹 Rashed Hossain (Batch 62)\n🔹 Hamim Reza (Batch 62)\n🔹 Zakir Hossain (Batch 62)\n\nThis achievement marks a milestone for the team and the Prime University programming community, serving as an inspiration for aspiring programmers. Their journey proves that consistent practice, collaboration, and determination can lead to success on internationally recognized platforms like ICPC.\n\n🎉 Congratulations to Team Superm4n_Fanclub for making Prime University proud and inspiring the next generation of competitive programmers. Keep coding, keep achieving! 🚀\n\nStanding: https://bapsoj.org/contests/icpc-dhaka-onsite-2025/standings",
+    images: [
+      "/icpc-2025/598445672_1462296192567191_7749230667263266347_n.jpg",
+      "/icpc-2025/600323971_1464120989051378_5766032782187943159_n.jpg",
+      "/icpc-2025/601022329_1462296672567143_6096038155183527651_n.jpg",
+      "/icpc-2025/602355338_1462296319233845_2654547349945338070_n.jpg",
+      "/icpc-2025/603099890_1462296399233837_6968475183737306387_n.jpg",
+      "/icpc-2025/603908582_1462296752567135_7826466602630088222_n.jpg"
+    ],
+    created_at: new Date().toISOString(),
+    created_by: "Admin Team",
+  },
+  {
     id: "post-1",
     title: "PUCPC Intra-University Programming Contest 2026",
     content: "Registration is now open for the biggest programming contest of the year! Form a team of 3 and prove your problem-solving skills. Exciting prizes await the champions! Check the Events section for more details.",
@@ -33,22 +59,11 @@ export const mockActivityPosts: ActivityPost[] = [
 ];
 
 export const mockMembers: Member[] = [
-  {
-    id: "adv-1",
-    name: "Dr. Syed Akhter Hossain",
-    role: "Chief Advisor",
-    photo: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400",
-    type: "advisor",
-    batch: "Faculty",
-  },
-  {
-    id: "adv-2",
-    name: "Prof. Anisur Rahman",
-    role: "Faculty Sponsor",
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
-    type: "advisor",
-    batch: "Faculty",
-  },
+  { id: "adv-1", name: "Md. Mahfuzur Rahman", role: "Convener", photo: "/advisors-new/mahfuzur.jpeg", type: "advisor", batch: "Faculty" },
+  { id: "adv-2", name: "Md. Samrat Ali Abu Kawser", role: "Advisor", photo: "/advisors-new/samrat.jpeg", type: "advisor", batch: "Faculty" },
+  { id: "adv-3", name: "Papia Akter", role: "Advisor", photo: "/advisors-new/papia.jpeg", type: "advisor", batch: "Faculty" },
+  { id: "adv-4", name: "Nahian Sourov", role: "Advisor", photo: "/advisors-new/nahian.jpeg", type: "advisor", batch: "Faculty" },
+  { id: "adv-5", name: "Md. Al Amin Bhuiyan", role: "Alumni Advisor", photo: "/advisors-new/alamin.jpeg", type: "advisor", batch: "Alumni" },
   { id: "mem-1", name: "Md. Rashed Hossain", role: "President", photo: "/committee-current/image34.png", type: "current", batch: "62 Batch" },
   { id: "mem-2", name: "Hameem Reza", role: "Vice President", photo: "/committee-current/image35.png", type: "current", batch: "62 Batch" },
   { id: "mem-3", name: "Md. Zakir Hossain", role: "General Secretary", photo: "/committee-current/image36.png", type: "current", batch: "62 Batch" },
