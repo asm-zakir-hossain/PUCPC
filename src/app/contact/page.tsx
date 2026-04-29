@@ -1,3 +1,5 @@
+"use client";
+
 import Accordion from "@/components/Accordion";
 import { Mail, MapPin, MessageSquare, Send } from "lucide-react";
 
