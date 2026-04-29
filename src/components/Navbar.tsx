@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -44,8 +45,8 @@ export default function Navbar() {
               PUCPC
             </Link>
           </div>
-          <div className="hidden lg:block">
-            <div className="ml-10 flex items-baseline space-x-6">
+          <div className="hidden lg:flex lg:items-center lg:gap-6">
+            <div className="flex items-baseline space-x-6">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -58,8 +59,12 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
+            <div className="border-l border-foreground/10 pl-6 flex items-center">
+              <ThemeToggle />
+            </div>
           </div>
-          <div className="-mr-2 flex lg:hidden">
+          <div className="-mr-2 flex items-center gap-2 lg:hidden">
+            <ThemeToggle />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-accent focus:outline-none"

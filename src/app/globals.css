@@ -17,13 +17,11 @@
   --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0B0B0B;
-    --foreground: #FFFFFF;
-  }
+.dark {
+  --background: #0B0B0B;
+  --foreground: #FFFFFF;
 }
-
+  
 html {
   scroll-behavior: smooth;
 }
