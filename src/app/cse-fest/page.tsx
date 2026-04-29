@@ -1,5 +1,6 @@
 import FadeIn from "@/components/FadeIn";
-import { Sparkles, CalendarDays, MapPin } from "lucide-react";
+import { Sparkles, CalendarDays, MapPin, Trophy } from "lucide-react";
+import Image from "next/image";
 
 export default function CseFestPage() {
   const highlights = [
@@ -9,6 +10,13 @@ export default function CseFestPage() {
     { title: "Tech Talks", description: "Seminars from renowned alumni and industry leaders on the latest technologies." },
     { title: "Gaming Contest", description: "Valorant, FIFA, and mobile esports tournaments." },
     { title: "Cultural Night", description: "End the fest with a massive celebration featuring live music and performances." }
+  ];
+
+  const pastWinners = [
+    { name: "Team Runtime Terror", category: "Programming Contest", image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=600", year: "2023" },
+    { name: "Ahmed Fiaz", category: "FIFA 23 Champion", image: "https://images.unsplash.com/photo-1610041321420-a596dd148c90?auto=format&fit=crop&q=80&w=600", year: "2023" },
+    { name: "Project Alpha", category: "Project Showcasing", image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600", year: "2023" },
+    { name: "Team Sentinels", category: "Valorant Tournament", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=600", year: "2023" },
   ];
 
   return (
@@ -60,6 +68,41 @@ export default function CseFestPage() {
                 <div className="bg-background border border-foreground/10 p-8 rounded-2xl h-full shadow-sm hover:-translate-y-1 transition-transform duration-300">
                   <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                   <p className="text-foreground/70 leading-relaxed">{item.description}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Past Champions Section */}
+      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background">
+        <div className="max-w-7xl mx-auto">
+          <FadeIn direction="up" className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Past Fest Champions</h2>
+            <div className="w-20 h-1 bg-amber-500 mx-auto rounded-full mb-6"></div>
+            <p className="text-foreground/60 max-w-2xl mx-auto">Honoring the brilliant minds and skilled teams who conquered the previous iterations of CSE Fest.</p>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {pastWinners.map((winner, index) => (
+              <FadeIn key={index} direction="up" delay={0.1 * index}>
+                <div className="bg-secondary-light/50 dark:bg-[#111] border border-foreground/10 rounded-2xl overflow-hidden shadow-sm group">
+                  <div className="h-48 overflow-hidden relative">
+                    <img 
+                      src={winner.image} 
+                      alt={winner.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-3 right-3 bg-amber-500/90 text-white text-xs font-bold px-2 py-1 rounded backdrop-blur-sm shadow-sm flex items-center gap-1">
+                      <Trophy className="w-3 h-3" />
+                      {winner.year}
+                    </div>
+                  </div>
+                  <div className="p-5">
+                    <p className="text-accent text-sm font-semibold mb-1 uppercase tracking-wider">{winner.category}</p>
+                    <h3 className="text-lg font-bold">{winner.name}</h3>
+                  </div>
                 </div>
               </FadeIn>
             ))}
