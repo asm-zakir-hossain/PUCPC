@@ -55,7 +55,7 @@ export default function BestPerformersPage() {
                   <h2 className="text-3xl md:text-4xl font-bold mb-2">{risingStar.name}</h2>
                   <p className="text-foreground/70 text-lg mb-4">@{risingStar.handle}</p>
                   <p className="text-foreground/80 leading-relaxed max-w-xl">
-                    "{risingStar.achievement}"
+                    &quot;{risingStar.achievement}&quot;
                   </p>
                 </div>
               </div>
