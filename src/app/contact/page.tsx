@@ -2,6 +2,7 @@
 
 import Accordion from "@/components/Accordion";
 import { Mail, MapPin, MessageSquare, Send } from "lucide-react";
+import FadeIn from "@/components/FadeIn";
 
 export default function ContactPage() {
   const faqs = [
@@ -31,14 +32,14 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen pt-20">
       {/* Hero Section */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background border-b border-foreground/5">
-        <div className="max-w-4xl mx-auto text-center">
+        <FadeIn direction="down" className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6">
             Get in Touch
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-2xl mx-auto">
             Have questions about joining, our events, or competitive programming? We are here to help. Reach out to us or check out the FAQs below.
           </p>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Main Content */}
@@ -46,7 +47,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           
           {/* Left Column: Contact Form & Info */}
-          <div className="space-y-12">
+          <FadeIn direction="left" className="space-y-12">
             <div>
               <h2 className="text-3xl font-bold tracking-tight mb-6">Contact Us</h2>
               
@@ -120,17 +121,17 @@ export default function ContactPage() {
                 </form>
               </div>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Right Column: FAQs */}
-          <div>
+          <FadeIn direction="right">
             <div className="mb-8">
               <h2 className="text-3xl font-bold tracking-tight mb-2">Frequently Asked Questions</h2>
               <p className="text-foreground/60">Find quick answers to common queries.</p>
             </div>
             
             <Accordion items={faqs} />
-          </div>
+          </FadeIn>
 
         </div>
       </section>

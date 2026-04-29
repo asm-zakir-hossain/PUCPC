@@ -1,4 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
+import FadeIn from "@/components/FadeIn";
 
 export default function RegisterPage() {
   const benefits = [
@@ -13,14 +14,14 @@ export default function RegisterPage() {
     <div className="flex flex-col min-h-screen pt-20">
       {/* Header Section */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background border-b border-foreground/5">
-        <div className="max-w-4xl mx-auto text-center">
+        <FadeIn direction="down" className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6">
             Join PUCPC
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-2xl mx-auto">
             Take the first step towards becoming a competitive programmer. Fill out the registration form below to officially join the club.
           </p>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Main Content */}
@@ -28,7 +29,7 @@ export default function RegisterPage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           {/* Instructions & Benefits Sidebar */}
-          <div className="lg:col-span-4 space-y-8">
+          <FadeIn direction="left" className="lg:col-span-4 space-y-8">
             <div className="bg-background border border-foreground/10 p-8 rounded-2xl shadow-sm">
               <h2 className="text-2xl font-bold tracking-tight mb-6 text-accent">Why Join Us?</h2>
               <ul className="space-y-4">
@@ -50,10 +51,10 @@ export default function RegisterPage() {
                 <li>Attend the upcoming orientation session!</li>
               </ol>
             </div>
-          </div>
+          </FadeIn>
 
           {/* Form Embed Area */}
-          <div className="lg:col-span-8">
+          <FadeIn direction="right" delay={0.2} className="lg:col-span-8">
             <div className="bg-background border border-foreground/10 rounded-2xl shadow-sm overflow-hidden h-[800px] w-full flex flex-col items-center justify-center relative">
               {/* Note: This is a placeholder embed URL. Replace the src with the actual Google Form embed URL */}
               <iframe 
@@ -77,7 +78,7 @@ export default function RegisterPage() {
                 </p>
               </div>
             </div>
-          </div>
+          </FadeIn>
 
         </div>
       </section>
