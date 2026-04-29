@@ -28,4 +28,14 @@ export interface ClubEvent {
   registration_link?: string;
 }
 
+export interface Member {
+  id: string;
+  name: string;
+  role: string;
+  session: string;
+  photo?: string;
+  type: 'current' | 'previous';
+}
+
+
 

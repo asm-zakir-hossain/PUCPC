@@ -1,4 +1,4 @@
-import { ActivityPost, Achievement, ClubEvent } from "@/types";
+import { ActivityPost, Achievement, ClubEvent, Member } from "@/types";
 
 export const mockActivityPosts: ActivityPost[] = [
   {
@@ -29,6 +29,48 @@ export const mockActivityPosts: ActivityPost[] = [
     images: [],
     created_at: new Date(Date.now() - 1000 * 60 * 60 * 24 * 5).toISOString(), // 5 days ago
     created_by: "President",
+  }
+];
+
+export const mockMembers: Member[] = [
+  {
+    id: "mem-1",
+    name: "Tariqul Islam",
+    role: "President",
+    session: "2025-2026",
+    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+    type: "current",
+  },
+  {
+    id: "mem-2",
+    name: "Sadia Rahman",
+    role: "Vice President",
+    session: "2025-2026",
+    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
+    type: "current",
+  },
+  {
+    id: "mem-3",
+    name: "Mehedi Hasan",
+    role: "General Secretary",
+    session: "2025-2026",
+    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
+    type: "current",
+  },
+  {
+    id: "mem-4",
+    name: "Arif Hossain",
+    role: "President",
+    session: "2024-2025",
+    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+    type: "previous",
+  },
+  {
+    id: "mem-5",
+    name: "Nafis Ahmed",
+    role: "General Secretary",
+    session: "2024-2025",
+    type: "previous",
   }
 ];
 
