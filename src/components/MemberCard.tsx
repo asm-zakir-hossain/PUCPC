@@ -27,12 +27,19 @@ export default function MemberCard({ member }: MemberCardProps) {
       <h3 className="text-xl font-bold tracking-tight mb-1 text-foreground group-hover:text-accent transition-colors">
         {member.name}
       </h3>
-      <p className="text-accent font-medium mb-1">
+      <p className="text-accent font-medium mb-2">
         {member.role}
       </p>
-      <p className="text-sm text-foreground/50 font-medium tracking-wide">
-        Session: {member.session}
-      </p>
+      {member.session && (
+        <p className="text-sm text-foreground/50 font-medium tracking-wide">
+          Session: {member.session}
+        </p>
+      )}
+      {member.batch && (
+        <p className="text-xs text-foreground/40 font-medium tracking-wide mt-1">
+          {member.batch}
+        </p>
+      )}
     </div>
   );
 }

@@ -32,9 +32,10 @@ export interface Member {
   id: string;
   name: string;
   role: string;
-  session: string;
+  session?: string;
   photo?: string;
-  type: 'current' | 'previous';
+  type: 'current' | 'previous' | 'advisor';
+  batch?: string;
 }
 
 export interface Resource {

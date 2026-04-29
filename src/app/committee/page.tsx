@@ -5,6 +5,7 @@ import FadeIn from "@/components/FadeIn";
 export default function CommitteePage() {
   const currentMembers = mockMembers.filter(m => m.type === "current");
   const previousMembers = mockMembers.filter(m => m.type === "previous");
+  const advisors = mockMembers.filter(m => m.type === "advisor");
 
   return (
     <div className="flex flex-col min-h-screen pt-20">
@@ -19,6 +20,26 @@ export default function CommitteePage() {
           </p>
         </FadeIn>
       </section>
+
+      {/* Advisor Panel Section */}
+      {advisors.length > 0 && (
+        <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary-light/10 dark:bg-[#050505]">
+          <div className="max-w-7xl mx-auto">
+            <FadeIn direction="up" className="mb-12 text-center">
+              <h2 className="text-3xl font-bold tracking-tight mb-4">Advisory Panel</h2>
+              <div className="w-20 h-1 bg-amber-500 mx-auto rounded-full"></div>
+            </FadeIn>
+            
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+              {advisors.map((member, index) => (
+                <FadeIn key={member.id} delay={0.1 * index} direction="up" className="w-full sm:w-[calc(50%-1.5rem)] md:w-[calc(33.333%-2rem)] max-w-sm">
+                  <MemberCard member={member} />
+                </FadeIn>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Current Committee Section */}
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary-light/30 dark:bg-[#0a0a0a]">

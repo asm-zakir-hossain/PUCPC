@@ -34,12 +34,29 @@ export const mockActivityPosts: ActivityPost[] = [
 
 export const mockMembers: Member[] = [
   {
+    id: "adv-1",
+    name: "Dr. Syed Akhter Hossain",
+    role: "Chief Advisor",
+    photo: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400",
+    type: "advisor",
+    batch: "Faculty",
+  },
+  {
+    id: "adv-2",
+    name: "Prof. Anisur Rahman",
+    role: "Faculty Sponsor",
+    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+    type: "advisor",
+    batch: "Faculty",
+  },
+  {
     id: "mem-1",
     name: "Tariqul Islam",
     role: "President",
     session: "2025-2026",
     photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
     type: "current",
+    batch: "52nd Batch"
   },
   {
     id: "mem-2",
@@ -48,6 +65,7 @@ export const mockMembers: Member[] = [
     session: "2025-2026",
     photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
     type: "current",
+    batch: "52nd Batch"
   },
   {
     id: "mem-3",
@@ -56,6 +74,7 @@ export const mockMembers: Member[] = [
     session: "2025-2026",
     photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
     type: "current",
+    batch: "53rd Batch"
   },
   {
     id: "mem-4",
@@ -64,6 +83,7 @@ export const mockMembers: Member[] = [
     session: "2024-2025",
     photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
     type: "previous",
+    batch: "48th Batch"
   },
   {
     id: "mem-5",
@@ -71,6 +91,7 @@ export const mockMembers: Member[] = [
     role: "General Secretary",
     session: "2024-2025",
     type: "previous",
+    batch: "49th Batch"
   }
 ];
 
