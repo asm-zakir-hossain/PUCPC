@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { LayoutDashboard, Calendar, Award, LogOut, Activity } from "lucide-react";
+import { signOut } from "firebase/auth";
+import { auth } from "@/lib/firebase";
 
 const sidebarLinks = [
   { name: "Dashboard", href: "/admin", icon: LayoutDashboard },
@@ -13,6 +15,16 @@ const sidebarLinks = [
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleSignOut = async () => {
+    try {
+      if (auth) await signOut(auth);
+      router.push("/");
+    } catch (error) {
+      console.error("Error signing out:", error);
+    }
+  };
 
   return (
     <div className="w-64 bg-[#0a0a0a] border-r border-foreground/10 h-screen fixed top-0 left-0 flex flex-col z-50">
@@ -45,13 +57,13 @@ export default function Sidebar() {
       </nav>
 
       <div className="p-4 border-t border-foreground/10">
-        <Link
-          href="/"
-          className="flex items-center gap-3 px-4 py-3 rounded-xl text-foreground/70 hover:bg-red-500/10 hover:text-red-500 transition-all duration-200"
+        <button
+          onClick={handleSignOut}
+          className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-foreground/70 hover:bg-red-500/10 hover:text-red-500 transition-all duration-200"
         >
           <LogOut className="w-5 h-5" />
-          Exit to Site
-        </Link>
+          Sign Out
+        </button>
       </div>
     </div>
   );
