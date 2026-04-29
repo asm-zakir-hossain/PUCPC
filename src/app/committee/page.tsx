@@ -45,7 +45,7 @@ export default function CommitteePage() {
       <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary-light/30 dark:bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <FadeIn direction="up" className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight mb-4">Current Executive Committee 2026</h2>
+            <h2 className="text-3xl font-bold tracking-tight mb-4">Executive Committee 2026</h2>
             <div className="w-20 h-1 bg-accent mx-auto rounded-full"></div>
           </FadeIn>
           
@@ -64,7 +64,7 @@ export default function CommitteePage() {
         <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background">
           <div className="max-w-7xl mx-auto">
             <FadeIn direction="up" className="mb-12 text-center">
-              <h2 className="text-3xl font-bold tracking-tight mb-4">Previous Committee 2025</h2>
+              <h2 className="text-3xl font-bold tracking-tight mb-4">Executive Committee 2025</h2>
               <div className="w-20 h-1 bg-foreground/20 mx-auto rounded-full"></div>
             </FadeIn>
             

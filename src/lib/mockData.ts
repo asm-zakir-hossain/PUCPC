@@ -27,16 +27,7 @@ export const mockActivityPosts: ActivityPost[] = [
     created_at: new Date().toISOString(),
     created_by: "Admin Team",
   },
-  {
-    id: "post-1",
-    title: "PUCPC Intra-University Programming Contest 2026",
-    content: "Registration is now open for the biggest programming contest of the year! Form a team of 3 and prove your problem-solving skills. Exciting prizes await the champions! Check the Events section for more details.",
-    images: [
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=1200",
-    ],
-    created_at: new Date(Date.now() - 1000 * 60 * 60 * 2).toISOString(), // 2 hours ago
-    created_by: "Admin Team",
-  },
+
   {
     id: "post-2",
     title: "Workshop: Introduction to Dynamic Programming",

@@ -40,9 +40,10 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold tracking-tighter hover:text-accent transition-colors">
-              PUCPC
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
+              <img src="/logo/club.jpg" alt="PUCPC Logo" className="h-10 w-10 object-cover rounded-full" />
+              <span className="text-2xl font-bold tracking-tighter text-foreground hover:text-accent transition-colors">PUCPC</span>
             </Link>
           </div>
           <div className="hidden lg:flex lg:items-center lg:gap-6">

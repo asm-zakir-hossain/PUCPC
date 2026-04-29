@@ -6,8 +6,14 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center bg-secondary-light/30 dark:bg-[#0f0f0f] border-b border-foreground/5 pt-20">
-        <FadeIn className="max-w-5xl">
+      <section className="relative flex flex-col items-center justify-center min-h-[60vh] px-4 text-center bg-secondary-light/30 dark:bg-[#0f0f0f] border-b border-foreground/5 pt-20 overflow-hidden">
+        
+        {/* Varsity Logo */}
+        <div className="absolute top-8 right-4 sm:top-12 sm:right-8 md:right-12 lg:right-16 z-0">
+          <img src="/logo/varsity.jpeg" alt="Prime University Logo" className="h-16 md:h-20 lg:h-24 w-auto object-contain rounded-md" />
+        </div>
+
+        <FadeIn className="max-w-5xl relative z-10">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-6">
             Building Competitive Programmers. <br className="hidden md:block" />
             <span className="text-accent">Creating Champions.</span>
