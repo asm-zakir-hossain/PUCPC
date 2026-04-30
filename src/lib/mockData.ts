@@ -15,7 +15,7 @@ export const mockActivityPosts: ActivityPost[] = [
       "/261-batch/646379936_1533114508818692_157331466989560609_n.jpg",
       "/261-batch/646380568_1533114298818713_5484483816111185742_n.jpg"
     ],
-    created_at: new Date().toISOString(),
+    created_at: "2026-05-01T10:00:00Z",
     created_by: "Admin Team",
   },
   {
@@ -24,7 +24,7 @@ export const mockActivityPosts: ActivityPost[] = [
     content: "The Department of CSE proudly presents a demo video showcasing all the exciting activities of PUCPC in 2025!\n\nHighlights include:\nICPC, IUPC, & IUCPC participation 🏆\nMonthly Programming Contests 💻\nJunior Programming Contests 👨‍💻\nPrize Giving Ceremonies 🥇\nHackathons & Training sessions for freshers by our club trainers 🚀\n\nWatch the video to relive a year full of coding, learning, and competitions!\nPromosite: https://pucpc-activity.netlify.app/\nMade by : Md. Rashed Hossain, General Secretary, PUCPC\nSupported by: Md. Mahfuzur Rahman, Convener, PUCPC",
     images: [],
     video_url: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1455001893031803&show_text=0",
-    created_at: new Date().toISOString(),
+    created_at: "2026-04-30T10:00:00Z",
     created_by: "Admin Team",
   },
   {
@@ -36,7 +36,7 @@ export const mockActivityPosts: ActivityPost[] = [
       "/colab-contest/591235655_1442407704556040_2253543201387973556_n.jpg",
       "/colab-contest/592026386_1442380981225379_5123636190788094188_n.jpg"
     ],
-    created_at: new Date().toISOString(),
+    created_at: "2026-04-29T10:00:00Z",
     created_by: "Admin Team",
   },
   {
@@ -47,7 +47,7 @@ export const mockActivityPosts: ActivityPost[] = [
       "/buet-iupc-2026/626011716_1506353981494745_8473754712018016657_n.jpg",
       "/buet-iupc-2026/627030027_1506353954828081_3075863775525601971_n.jpg"
     ],
-    created_at: new Date().toISOString(),
+    created_at: "2026-04-28T10:00:00Z",
     created_by: "Admin Team",
   },
   {
@@ -111,10 +111,10 @@ export const mockMembers: Member[] = [
   { id: "prev-3", name: "MD. Zakir hossain", role: "Treasurer", photo: "/previous-committee/image17.png", type: "previous", batch: "Batch 62" },
   { id: "prev-4", name: "Saiful Islam Nirob", role: "Organizing Secretary", photo: "/previous-committee/image18.png", type: "previous", batch: "Batch 63" },
   { id: "prev-5", name: "Sadia Islam Sharna", role: "Co-Organizing Secretary", photo: "/previous-committee/image19.png", type: "previous", batch: "Batch 63" },
-  { id: "prev-6", name: "Abu Bakar Shihab", role: "Instructor", photo: "/previous-committee/image20.png", type: "previous", batch: "Batch 63" },
+  { id: "prev-6", name: "Hameem Reza", role: "Instructor", photo: "/previous-committee/image20.png", type: "previous", batch: "Batch 62" },
   { id: "prev-7", name: "Shakib Hossen", role: "Instructor", photo: "/previous-committee/image21.png", type: "previous", batch: "Batch 62" },
-  { id: "prev-8", name: "Hamim Reza", role: "Instructor", photo: "/previous-committee/image22.png", type: "previous", batch: "Batch 62" },
-  { id: "prev-9", name: "Omor Faruq", role: "Instructor", photo: "/previous-committee/image23.png", type: "previous", batch: "Batch 63" }
+  { id: "prev-8", name: "Omor Faruq", role: "Instructor", photo: "/previous-committee/image22.png", type: "previous", batch: "Batch 63" },
+  { id: "prev-9", name: "Abu Bakar Shihab", role: "Instructor", photo: "/previous-committee/image23.png", type: "previous", batch: "Batch 63" }
 ];
 
 export const mockEvents: ClubEvent[] = [
