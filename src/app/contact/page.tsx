@@ -58,7 +58,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-foreground">Email</p>
-                    <a href="mailto:info@pucpc.org" className="hover:text-accent transition-colors">info@pucpc.org</a>
+                    <a href="mailto:pucsecpc.official@gmail.com" className="hover:text-accent transition-colors">pucsecpc.official@gmail.com</a>
                   </div>
                 </div>
 

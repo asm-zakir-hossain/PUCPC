@@ -2,6 +2,18 @@ import { ActivityPost, Achievement, ClubEvent, Member, Resource } from "@/types"
 
 export const mockActivityPosts: ActivityPost[] = [
   {
+    id: "post-01",
+    title: "PUCPC Excels at BUBT Inter University Collaboration Programming Contest",
+    content: "Two talented teams from the Prime University Computer Programming Club (PUCPC), Dept. of CSE, proudly participated in the BUBT Inter University Collaboration Programming Contest (BIUCPC) held today. Among the 75 participating teams, Superm4n_FanClub secured an impressive 28th position, while Prime_failed also delivered a good performance—showcasing skill, teamwork, and determination.\n\n💥 Superm4n_FanClub\n👤 Md. Rashed Hossain (Batch 62)\n👤 Hamim Reza (Batch 62)\n👤 Zakir Hossain (Batch 62)\n\n💥 Prime_failed\n👤 Md. Tamim Khan (Batch 59)\n👤 Saiful Islam Nirob (Batch 63)\n👤 Omor Fariq (Batch 63)\n\nA huge round of appreciation to both teams for representing Prime University with dedication, consistency, and a powerful competitive spirit. Every contest sharpens our abilities, and every experience strengthens our CPC family. 🚀🔥\n\nWe are truly proud of our champions—\nLet’s continue to push forward, learn more, and grow together! ❤️",
+    images: [
+      "/colab-contest/590901316_1442380907892053_4241345379952051079_n.jpg",
+      "/colab-contest/591235655_1442407704556040_2253543201387973556_n.jpg",
+      "/colab-contest/592026386_1442380981225379_5123636190788094188_n.jpg"
+    ],
+    created_at: new Date().toISOString(),
+    created_by: "Admin Team",
+  },
+  {
     id: "post-00",
     title: "BUET CSE Fest 2026: Prime University Represents at IUPC",
     content: "The Department of Computer Science & Engineering, Prime University proudly represented the university at the Inter University Programming Contest, powered by Phitron | Prime Now Presents BUET CSE Fest 2026.\n\n🔹 Team Name: PrimeU_Supernova\n🔹 Team Members:\n• Md Rashed Hossain (62nd Batch)\n• Md Zakir Hossain (62nd Batch)\n• Saiful Islam Nirob (63rd Batch)\n\nThroughout the contest, the team showcased commendable problem-solving skills, consistency, and teamwork in a highly competitive environment. Their performance reflects strong dedication to competitive programming and a continuous pursuit of excellence.\n\nWe congratulate Team PrimeU_Supernova for representing Prime University with determination and professionalism, and we wish them continued success in future competitions.",
@@ -82,21 +94,25 @@ export const mockMembers: Member[] = [
 export const mockEvents: ClubEvent[] = [
   {
     id: "evt-1",
-    title: "PUCPC Intra-University Programming Contest 2026",
+    title: "NDUB Intra-University Programming Contest 2026",
     type: "upcoming",
     date: "2026-05-15T10:00:00.000Z",
     description: "The biggest programming contest of the year is here! Form a team of 3 and prove your problem-solving skills. Exciting prizes await the champions. Open to all current students.",
-    images: [],
+    images: [
+      "/nubfest/663218304_928166676646287_6108617274081833472_n.jpg"
+    ],
     registration_link: "https://docs.google.com/forms",
   },
   {
     id: "evt-2",
-    title: "Advanced Data Structures Workshop",
+    title: "DUET Intra-University Programming Contest",
     type: "upcoming",
-    date: "2026-05-05T14:00:00.000Z",
-    description: "Join us for an intensive workshop on advanced data structures, focusing on Segment Trees and Fenwick Trees. Perfect for intermediate competitive programmers.",
-    images: [],
-    registration_link: "https://docs.google.com/forms",
+    date: "2026-05-20T10:00:00.000Z",
+    description: "PUCPC teams are gearing up to participate in the upcoming DUET Intra-University Programming Contest. Let's practice hard and bring home the trophy!",
+    images: [
+      "/duet/672256702_1022986876723473_4354052472841041174_n.jpg"
+    ],
+    registration_link: "",
   },
   {
     id: "evt-3",
@@ -162,28 +178,21 @@ export const mockResources: Resource[] = [
 export const mockAchievements: Achievement[] = [
   {
     id: "ach-1",
-    contest_name: "ICPC Asia Dhaka Regional Contest 2025",
-    rank: "Honorable Mention",
-    team_name: "PUCPC_RuntimeTerror",
-    participants: ["Arif Hossain", "Mehedi Hasan", "Nafis Ahmed"],
+    contest_name: "ICPC",
+    rank: "Outstanding performance",
+    team_name: "Superm4n_Fanclub",
+    participants: ["Md. Rashed Hossain", "Hamim Reza", "Zakir Hossain"],
     date: "2025-11-15T00:00:00.000Z",
-    image: "https://images.unsplash.com/photo-1561489401-fc2876ced162?auto=format&fit=crop&q=80&w=1200",
+    image: "/achievements/icpc.webp",
     is_featured: true,
   },
   {
     id: "ach-2",
-    contest_name: "National Hackathon 2025",
-    rank: "1st Runner Up",
-    team_name: "Code Crafters",
-    participants: ["Sadia Islam", "Rahim Uddin"],
-    date: "2025-08-20T00:00:00.000Z",
-  },
-  {
-    id: "ach-3",
-    contest_name: "NCPC 2024",
-    rank: "Top 50",
-    team_name: "PUCPC_Ignite",
-    participants: ["Zakir Hossain", "Tariqul Islam", "Fahim Faysal"],
-    date: "2024-12-10T00:00:00.000Z",
+    contest_name: "BUBT Inter University Collaboration Programming Contest",
+    rank: "Top 30",
+    team_name: "Superm4n_FanClub",
+    participants: ["Md. Rashed Hossain", "Hamim Reza", "Zakir Hossain"],
+    date: "2025-12-10T00:00:00.000Z",
+    image: "/achievements/bubt.webp",
   }
 ];

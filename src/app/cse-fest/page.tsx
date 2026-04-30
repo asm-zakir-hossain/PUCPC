@@ -13,10 +13,9 @@ export default function CseFestPage() {
   ];
 
   const pastWinners = [
-    { name: "Team Runtime Terror", category: "Programming Contest", image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=600", year: "2023" },
-    { name: "Ahmed Fiaz", category: "FIFA 23 Champion", image: "https://images.unsplash.com/photo-1610041321420-a596dd148c90?auto=format&fit=crop&q=80&w=600", year: "2023" },
-    { name: "Project Alpha", category: "Project Showcasing", image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600", year: "2023" },
-    { name: "Team Sentinels", category: "Valorant Tournament", image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=600", year: "2023" },
+    { name: "PrimeU_Alpha_Q", category: "Programming Contest", image: "/programming2025/499992179_1253092463487566_399660810391864307_n.jpg", year: "2025" },
+    { name: "Shakib Hossen", category: "Gaming Contest Champion", image: "/shakib2.jpg", year: "2025", position: "object-top" },
+    { name: "Project Alpha", category: "Project Showcasing", image: "/projectshow2025.jpg", year: "2025" },
   ];
 
   return (
@@ -35,16 +34,16 @@ export default function CseFestPage() {
             <span>The Biggest Tech Event of the Year</span>
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-6 bg-gradient-to-br from-foreground to-foreground/50 bg-clip-text text-transparent">
-            CSE Fest 2024
+            CSE Fest 2026
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 leading-relaxed max-w-2xl mx-auto mb-10">
             Join us for three days of innovation, competition, and celebration. The annual CSE Fest brings together the brightest minds of Prime University.
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-6 text-foreground/70 font-medium">
-            <div className="flex items-center gap-2 bg-secondary-light dark:bg-secondary-dark px-4 py-2 rounded-xl">
+            <div className="flex items-center gap-2 bg-secondary-light dark:bg-secondary-dark px-4 py-2 rounded-xl text-accent font-bold">
               <CalendarDays className="w-5 h-5 text-accent" />
-              <span>December 12 - 14, 2024</span>
+              <span>Coming Soon</span>
             </div>
             <div className="flex items-center gap-2 bg-secondary-light dark:bg-secondary-dark px-4 py-2 rounded-xl">
               <MapPin className="w-5 h-5 text-accent" />
@@ -92,7 +91,7 @@ export default function CseFestPage() {
                     <img 
                       src={winner.image} 
                       alt={winner.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${winner.position || 'object-center'}`}
                     />
                     <div className="absolute top-3 right-3 bg-amber-500/90 text-white text-xs font-bold px-2 py-1 rounded backdrop-blur-sm shadow-sm flex items-center gap-1">
                       <Trophy className="w-3 h-3" />

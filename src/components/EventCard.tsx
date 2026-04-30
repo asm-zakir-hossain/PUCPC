@@ -10,7 +10,7 @@ interface EventCardProps {
 
 export default function EventCard({ event }: EventCardProps) {
   const isUpcoming = event.type === "upcoming";
-  const dateFormatted = format(new Date(event.date), "MMMM d, yyyy 'at' h:mm a");
+  const dateFormatted = format(new Date(event.date), "MMMM d, yyyy");
 
   return (
     <article className={`bg-background border rounded-2xl overflow-hidden transition-all duration-300 flex flex-col h-full
@@ -21,12 +21,14 @@ export default function EventCard({ event }: EventCardProps) {
     >
       {/* Event Image (if any) */}
       {event.images && event.images.length > 0 && (
-        <div className={`relative w-full bg-secondary-light dark:bg-secondary-dark ${isUpcoming ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
+        <div 
+          className={`relative w-full bg-secondary-light dark:bg-secondary-dark ${isUpcoming ? "aspect-[16/9]" : "aspect-[4/3]"}`}
+        >
           <Image 
             src={event.images[0]} 
             alt={event.title} 
             fill 
-            className="object-cover"
+            className="object-contain"
           />
           {isUpcoming && (
             <div className="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
@@ -58,20 +60,7 @@ export default function EventCard({ event }: EventCardProps) {
           {event.description}
         </p>
 
-        {/* CTA Button for Upcoming Events */}
-        {isUpcoming && event.registration_link && (
-          <div className="mt-auto pt-4 border-t border-foreground/5">
-            <a 
-              href={event.registration_link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full gap-2 bg-accent hover:bg-accent/90 text-white font-medium py-3 px-4 rounded-xl transition-colors duration-200"
-            >
-              <span>Register Now</span>
-              <ExternalLink className="w-4 h-4" />
-            </a>
-          </div>
-        )}
+
       </div>
     </article>
   );

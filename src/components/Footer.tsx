@@ -33,7 +33,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-foreground/70">
               <li>Prime University</li>
               <li>Dhaka, Bangladesh</li>
-              <li>Email: info@pucpc.org</li>
+              <li>Email: <a href="mailto:pucsecpc.official@gmail.com" className="hover:text-accent transition-colors">pucsecpc.official@gmail.com</a></li>
             </ul>
           </div>
         </div>

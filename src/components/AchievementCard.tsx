@@ -25,12 +25,12 @@ export default function AchievementCard({ achievement }: AchievementCardProps) {
           <Image 
             src={achievement.image} 
             alt={achievement.contest_name} 
-            fill 
-            className="object-cover"
+            fill
+            className="object-contain"
           />
           {isFeatured && (
             <div className="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-md">
-              Featured Win
+              Featured
             </div>
           )}
         </div>
