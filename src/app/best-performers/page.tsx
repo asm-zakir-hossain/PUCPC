@@ -11,11 +11,16 @@ export default function BestPerformersPage() {
   };
 
   const performers = [
-    { rank: 1, name: "Zakir Hossain", handle: "zakir_pucpc", rating: 1850, title: "Candidate Master", platform: "Codeforces", solved: 1200, image: "https://i.pravatar.cc/150?u=zakir" },
-    { rank: 2, name: "Jane Doe", handle: "jane_codes", rating: 1620, title: "Expert", platform: "Codeforces", solved: 850, image: "https://i.pravatar.cc/150?u=jane" },
-    { rank: 3, name: "John Smith", handle: "jsmith99", rating: 1540, title: "Specialist", platform: "Codeforces", solved: 720, image: "https://i.pravatar.cc/150?u=john" },
-    { rank: 4, name: "Alice Johnson", handle: "alice_algo", rating: 1450, title: "Specialist", platform: "Codeforces", solved: 600, image: "https://i.pravatar.cc/150?u=alice" },
-    { rank: 5, name: "Bob Williams", handle: "bob_builder", rating: 1390, title: "Pupil", platform: "Codeforces", solved: 450, image: "https://i.pravatar.cc/150?u=bob" },
+    { rank: 1, name: "Rashed Hossain", handle: "StuckOnNewbie", rating: 1612, title: "Expert", platform: "Codeforces", solved: 1266, image: "https://userpic.codeforces.org/2887892/title/a0ecab26fded8ede.jpg", link: "https://codeforces.com/profile/StuckOnNewbie" },
+    { rank: 2, name: "Samin Sadik Khan", handle: "SSKsan", rating: 1273, title: "Pupil", platform: "Codeforces", solved: 317, image: "https://userpic.codeforces.org/2718895/title/1e33fcfea1ccd1d7.jpg", link: "https://codeforces.com/profile/SSKsan" },
+    { rank: 3, name: "Rocky Chowdhury", handle: "__Cipher__", rating: 1213, title: "Pupil", platform: "Codeforces", solved: 361, image: "https://userpic.codeforces.org/2922601/title/3e7bc65a51cbaa31.jpg", link: "https://codeforces.com/profile/__Cipher__" },
+    { rank: 4, name: "Saiful Islam Nirob", handle: "saiful.nirob", rating: 1116, title: "Newbie", platform: "Codeforces", solved: 808, image: "https://userpic.codeforces.org/3664723/title/96932cf99125cfe4.jpg", link: "https://codeforces.com/profile/saiful.nirob" },
+    { rank: 5, name: "Hamim Reza", handle: "_H_R_", rating: 1025, title: "Newbie", platform: "Codeforces", solved: 358, image: "https://userpic.codeforces.org/1626831/title/7ef1f990be8c53f0.jpg", link: "https://codeforces.com/profile/_H_R_" },
+    { rank: 6, name: "Omor Faruq", handle: "Omorisdead", rating: 948, title: "Newbie", platform: "Codeforces", solved: 265, image: "https://userpic.codeforces.org/4261892/title/d8ba8b6f16edfdff.jpg", link: "https://codeforces.com/profile/Omorisdead" },
+    { rank: 7, name: "Abu Bakar Shihab", handle: "a.b.shihab", rating: 923, title: "Newbie", platform: "Codeforces", solved: 177, image: "https://userpic.codeforces.org/3849813/title/5d87308a768b7a41.jpg", link: "https://codeforces.com/profile/a.b.shihab" },
+    { rank: 8, name: "Md. Zakir Hossain", handle: "asm_zakir", rating: 907, title: "Newbie", platform: "Codeforces", solved: 275, image: "https://userpic.codeforces.org/3301202/title/8d23d68b7c7ebdb4.jpg", link: "https://codeforces.com/profile/asm_zakir" },
+    { rank: 9, name: "Mahmud", handle: "Mahmuud007", rating: 800, title: "Newbie", platform: "Codeforces", solved: 274, image: "https://userpic.codeforces.org/no-title.jpg", link: "https://codeforces.com/profile/Mahmuud007" },
+    { rank: 10, name: "SK. Riadul Islam Fardin", handle: "Fardinius", rating: 711, title: "Newbie", platform: "Codeforces", solved: 133, image: "https://userpic.codeforces.org/5053495/title/75a03e64b35175b8.jpg", link: "https://codeforces.com/profile/Fardinius" },
   ];
 
   return (
@@ -77,7 +82,7 @@ export default function BestPerformersPage() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-foreground/60 font-medium">
                   <TrendingUp className="w-4 h-4" />
-                  Live Ratings
+                  Max Ratings
                 </div>
               </div>
 
@@ -106,7 +111,7 @@ export default function BestPerformersPage() {
                         <h3 className="text-lg font-bold">{user.name}</h3>
                         {user.rank === 1 && <Star className="w-4 h-4 text-amber-500 fill-amber-500" />}
                       </div>
-                      <p className="text-sm text-foreground/60">@{user.handle}</p>
+                      <a href={user.link} target="_blank" rel="noopener noreferrer" className="text-sm text-accent hover:underline">@{user.handle}</a>
                     </div>
 
                     <div className="text-right hidden sm:block">
