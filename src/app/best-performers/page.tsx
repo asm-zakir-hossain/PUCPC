@@ -3,11 +3,11 @@ import { Award, TrendingUp, Star, Zap } from "lucide-react";
 
 export default function BestPerformersPage() {
   const risingStar = {
-    name: "Mehedi Hasan",
-    handle: "mehedi_dev",
-    image: "https://i.pravatar.cc/150?u=mehedi",
-    month: "October 2024",
-    achievement: "Solved 100+ problems in a single month and reached Specialist rating on Codeforces."
+    name: "Mahmudul Hasan",
+    handle: "Mahmuud007",
+    image: "/performers/mahmudul.jpeg",
+    month: "April 2026",
+    achievement: "Solved more than 100 problems in April 2026."
   };
 
   const performers = [

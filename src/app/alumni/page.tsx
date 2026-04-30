@@ -1,15 +1,13 @@
 import FadeIn from "@/components/FadeIn";
-import { Briefcase, MapPin } from "lucide-react";
+import { Briefcase } from "lucide-react";
 import Image from "next/image";
 
 export default function AlumniPage() {
   const alumni = [
-    { name: "Rafiqul Islam", role: "Software Engineer", company: "Google", location: "London, UK", year: "Batch of 2018", image: "https://i.pravatar.cc/150?u=rafiqul" },
-    { name: "Sadia Rahman", role: "Backend Developer", company: "Optimizely", location: "Dhaka, BD", year: "Batch of 2019", image: "https://i.pravatar.cc/150?u=sadia" },
-    { name: "Tanvir Ahmed", role: "Senior SDE", company: "Amazon", location: "Seattle, USA", year: "Batch of 2017", image: "https://i.pravatar.cc/150?u=tanvir" },
-    { name: "Nusrat Jahan", role: "Data Scientist", company: "Pathao", location: "Dhaka, BD", year: "Batch of 2021", image: "https://i.pravatar.cc/150?u=nusrat" },
-    { name: "Faisal Hossain", role: "Frontend Engineer", company: "Toptal", location: "Remote", year: "Batch of 2020", image: "https://i.pravatar.cc/150?u=faisal" },
-    { name: "Kamrul Hasan", role: "Tech Lead", company: "Brain Station 23", location: "Dhaka, BD", year: "Batch of 2016", image: "https://i.pravatar.cc/150?u=kamrul" },
+    { name: "Safwan Alamgir", role: "Senior Software Engineer", company: "Vivasoft Limited", year: "Batch 22", image: "/alumni-new/safwan.jpeg", linkedin: "https://www.linkedin.com/in/safwancse/?skipRedirect=true" },
+    { name: "Md. Al Amin Bhuiyan", role: "Senior Software Engineer", company: "Bkash", year: "Batch 24", image: "/alumni-new/alamin.jpeg" },
+    { name: "Md Emran Masud", role: "Software Developer", company: "Light Technologies", year: "Batch 50", image: "/alumni-new/emran.jpeg", linkedin: "https://www.linkedin.com/in/emnayon/?skipRedirect=true" },
+    { name: "Md Mominur Rahman", role: "Software Engineer", company: "Brain Station", year: "Batch 53", image: "/alumni-new/mominur.jpeg", linkedin: "https://www.linkedin.com/in/99mominur/" },
   ];
 
   return (
@@ -46,13 +44,15 @@ export default function AlumniPage() {
                   
                   <div className="w-full space-y-3 pt-4 border-t border-foreground/10 mt-auto">
                     <div className="flex items-center justify-center gap-2 text-foreground/70 text-sm">
-                      <Briefcase className="w-4 h-4" />
+                      <Briefcase className="w-4 h-4 shrink-0" />
                       <span>{person.role} at <span className="font-semibold text-foreground">{person.company}</span></span>
                     </div>
-                    <div className="flex items-center justify-center gap-2 text-foreground/70 text-sm">
-                      <MapPin className="w-4 h-4" />
-                      <span>{person.location}</span>
-                    </div>
+                    {person.linkedin && (
+                      <div className="flex items-center justify-center gap-2 text-foreground/70 text-sm">
+                        <svg viewBox="0 0 24 24" className="w-4 h-4 shrink-0 fill-current text-[#0A66C2]"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-[#0A66C2] transition-colors font-medium">LinkedIn Profile</a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </FadeIn>
