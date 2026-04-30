@@ -2,6 +2,32 @@ import { ActivityPost, Achievement, ClubEvent, Member, Resource } from "@/types"
 
 export const mockActivityPosts: ActivityPost[] = [
   {
+    id: "post-batch-261",
+    title: "🚀 Programming Club Initiative for Batch 261 💻",
+    content: "On behalf of the Prime University Computer Programming Club, we are conducting programming classes for Batch 261st, held 2 days per week. The complete C Programming course (Structured Programming Club) has been structured into 24 well-organized modules to ensure step-by-step learning and a strong foundation.\n\nOur dedicated club members and Convener are taking the classes with great effort and enthusiasm. We are happy to see that the students of Batch 261st are attending regularly, actively participating, and steadily building their programming fundamentals. The class effective from 5th January, 2026.\n\nTogether, we are shaping a stronger coding culture and preparing future problem solvers! 💡🔥",
+    images: [
+      "/261-batch/643885111_1533114188818724_9213690476030548659_n.jpg",
+      "/261-batch/645357075_1533114432152033_5218285779930897048_n.jpg",
+      "/261-batch/646364799_1533114462152030_3702397076097531380_n.jpg",
+      "/261-batch/646368683_1533114388818704_5838882919240314238_n.jpg",
+      "/261-batch/646369892_1533114242152052_1989562754221341192_n.jpg",
+      "/261-batch/646375848_1533114345485375_844996150938046289_n.jpg",
+      "/261-batch/646379936_1533114508818692_157331466989560609_n.jpg",
+      "/261-batch/646380568_1533114298818713_5484483816111185742_n.jpg"
+    ],
+    created_at: new Date().toISOString(),
+    created_by: "Admin Team",
+  },
+  {
+    id: "post-highlights-2025",
+    title: "🎬 Prime University Computer Programming Club – 2025 Highlights!",
+    content: "The Department of CSE proudly presents a demo video showcasing all the exciting activities of PUCPC in 2025!\n\nHighlights include:\nICPC, IUPC, & IUCPC participation 🏆\nMonthly Programming Contests 💻\nJunior Programming Contests 👨‍💻\nPrize Giving Ceremonies 🥇\nHackathons & Training sessions for freshers by our club trainers 🚀\n\nWatch the video to relive a year full of coding, learning, and competitions!\nPromosite: https://pucpc-activity.netlify.app/\nMade by : Md. Rashed Hossain, General Secretary, PUCPC\nSupported by: Md. Mahfuzur Rahman, Convener, PUCPC",
+    images: [],
+    video_url: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1455001893031803&show_text=0",
+    created_at: new Date().toISOString(),
+    created_by: "Admin Team",
+  },
+  {
     id: "post-01",
     title: "PUCPC Excels at BUBT Inter University Collaboration Programming Contest",
     content: "Two talented teams from the Prime University Computer Programming Club (PUCPC), Dept. of CSE, proudly participated in the BUBT Inter University Collaboration Programming Contest (BIUCPC) held today. Among the 75 participating teams, Superm4n_FanClub secured an impressive 28th position, while Prime_failed also delivered a good performance—showcasing skill, teamwork, and determination.\n\n💥 Superm4n_FanClub\n👤 Md. Rashed Hossain (Batch 62)\n👤 Hamim Reza (Batch 62)\n👤 Zakir Hossain (Batch 62)\n\n💥 Prime_failed\n👤 Md. Tamim Khan (Batch 59)\n👤 Saiful Islam Nirob (Batch 63)\n👤 Omor Fariq (Batch 63)\n\nA huge round of appreciation to both teams for representing Prime University with dedication, consistency, and a powerful competitive spirit. Every contest sharpens our abilities, and every experience strengthens our CPC family. 🚀🔥\n\nWe are truly proud of our champions—\nLet’s continue to push forward, learn more, and grow together! ❤️",

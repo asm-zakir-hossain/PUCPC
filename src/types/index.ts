@@ -3,6 +3,7 @@ export interface ActivityPost {
   title: string;
   content: string;
   images: string[];
+  video_url?: string;
   created_at: string;
   created_by?: string;
 }

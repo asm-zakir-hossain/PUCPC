@@ -75,6 +75,19 @@ export default function ActivityCard({ post }: ActivityCardProps) {
           })}
         </div>
       )}
+
+      {/* Video */}
+      {post.video_url && (
+        <div className="relative w-full aspect-[16/9] mt-auto border-t border-foreground/10 bg-black">
+          <iframe 
+            src={post.video_url} 
+            className="absolute top-0 left-0 w-full h-full"
+            style={{ border: 'none', overflow: 'hidden' }} 
+            allowFullScreen={true} 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+          />
+        </div>
+      )}
     </article>
 
     {/* Lightbox Modal */}
